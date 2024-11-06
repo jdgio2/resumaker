@@ -1,0 +1,9 @@
+.parent-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-preview,
+.input-field {
+  width: 100%;
+}
