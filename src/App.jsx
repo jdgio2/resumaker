@@ -33,19 +33,19 @@ function App() {
         handleHeader={(new_info) => {
           setResumeHeader(new_info);
         }}
-        handleBody={(new_info) => {
+        handleExperience={(new_info) => {
           setResumeExperience(new_info);
         }}
-        handleExperience={(new_info) => {
+        handleEducation={(new_info) => {
           setResumeEducation(new_info);
         }}
-        handleEducation={(new_info) => {
+        handleProjects={(new_info) => {
           setResumeProjects(new_info);
         }}
       ></InputField>
       <ResumePreview
         header={resumeHeader}
-        body={resumeExperience}
+        experience={resumeExperience}
         education={resumeEducation}
         projects={resumeProjects}
       ></ResumePreview>
