@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function ResumeExperience({ experience }) {
   return (
     <div className="resume-experience">
@@ -11,3 +13,12 @@ export default function ResumeExperience({ experience }) {
     </div>
   );
 }
+
+ResumeExperience.propTypes = {
+  experience: PropTypes.shape({
+    role: PropTypes.string.isRequired,
+    company: PropTypes.string.isRequired,
+    years: PropTypes.string.isRequired,
+    info: PropTypes.string.isRequired,
+  }).isRequired,
+};

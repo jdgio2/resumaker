@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function InputExperience({ handleChange }) {
   return (
     <div className="input-experience big-container input-container">
@@ -50,3 +52,7 @@ export default function InputExperience({ handleChange }) {
     </div>
   );
 }
+
+InputExperience.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+};

@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function ResumeHeader({ header }) {
   return (
     <div className="resume-header">
@@ -15,3 +17,16 @@ export default function ResumeHeader({ header }) {
     </div>
   );
 }
+
+ResumeHeader.propTypes = {
+  header: PropTypes.shape({
+    first_name: PropTypes.string.isRequired,
+    last_name: PropTypes.string.isRequired,
+    links: PropTypes.arrayOf(
+      PropTypes.shape({
+        href: PropTypes.string.isRequired,
+        name: PropTypes.string.isRequired,
+      })
+    ).isRequired,
+  }).isRequired,
+};

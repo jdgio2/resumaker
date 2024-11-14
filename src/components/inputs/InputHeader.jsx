@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 export default function InputHeader({ handleChange }) {
   return (
     <div className="input-header">
@@ -34,3 +36,7 @@ export default function InputHeader({ handleChange }) {
     </div>
   );
 }
+
+InputHeader.propTypes = {
+  handleChange: PropTypes.func.isRequired,
+};

@@ -1,5 +1,6 @@
 import "../App.css";
 import "../index.css";
+import PropTypes from "prop-types";
 
 import InputHeader from "./inputs/InputHeader";
 import InputExperience from "./inputs/InputExperience";
@@ -26,3 +27,10 @@ export default function InputField({
     </div>
   );
 }
+
+InputField.propTypes = {
+  handleHeader: PropTypes.func.isRequired,
+  handleExperience: PropTypes.func.isRequired,
+  handleEducation: PropTypes.func.isRequired,
+  handleProjects: PropTypes.func.isRequired,
+};
